@@ -7,7 +7,7 @@ export const servicesData = [
     items: [
       {
         title: "Backend Engineering",
-        description: "(REST/GraphQL APIs, Microservices, Auth Systems)",
+        description: "(GO/Nodejs APIs, Microservices, Auth Systems)",
       },
       {
         title: "Frontend Excellence",
@@ -19,46 +19,9 @@ export const servicesData = [
       },
     ],
   },
+
   {
-    title: "DevOps & Cloud Solutions",
-    description:
-      "Deploying software shouldn't be a gamble. I automate infrastructure, enforce security, and leverage cloud platforms (AWS/Azure) to keep your app running smoothly—24/7, at any scale.",
-    items: [
-      {
-        title: "CI/CD Pipelines",
-        description: "(GitHub Actions, Docker, Kubernetes)",
-      },
-      {
-        title: "Server Management ",
-        description: "(Linux, Nginx, Load Balancing)",
-      },
-      {
-        title: "Performance Tuning",
-        description: "(Caching, Compression, Lighthouse 90+ Scores)",
-      },
-    ],
-  },
-  {
-    title: "Security & Optimization",
-    description:
-      "Slow or hacked apps destroy trust. I harden security (XSS/SQLI protection, OAuth) and optimize bottlenecks so your app stays fast, safe, and scalable as you grow.",
-    items: [
-      {
-        title: "Code Audits",
-        description: "(Refactoring, Tech Debt Cleanup)",
-      },
-      {
-        title: "Pen Testing",
-        description: "(Vulnerability Assessments)",
-      },
-      {
-        title: "SEO Tech Stack",
-        description: "(SSR, Metadata, Structured Data)",
-      },
-    ],
-  },
-  {
-    title: "Web & Mobile Apps",
+    title: "Web Apps",
     description:
       "A clunky interface can sink even the best ideas. I craft responsive, pixel perfect web and mobile apps (React Native/Flutter) that users love—bridging design and functionality seamlessly.",
     items: [
@@ -67,115 +30,124 @@ export const servicesData = [
         description: "(Single codebase for iOS/Android/Web)",
       },
       {
-        title: "PWAs",
-        description: "(Offline mode, Push Notifications)",
+        title: "Virtual Assistant",
+        description:
+          "(Created a virtual assistant integrated with AI for seamless communication.)",
       },
       {
-        title: "E-Commerce",
-        description: "(Checkout flows, Payment Gateways, Inventory APIs)",
+        title: "Blog Application",
+        description:
+          "(Implemented CRUD operations with authentication using GO + React to understand full-stack synergy.)",
+      },
+    ],
+  },
+
+  {
+    title: "Problem Solving & Open Source",
+    description:
+      "I actively solve algorithmic problems and contribute to the developer community through open source—enhancing my coding skills while collaborating with others.",
+    items: [
+      {
+        title: "LeetCode Enthusiast",
+        description:
+          "(Solved 500+ DSA problems—focusing on patterns, efficiency, and real-world scenarios.)",
+      },
+      {
+        title: "GSSoC Contributor",
+        description:
+          "(Contributed to open source during GirlScript Summer of Code—worked on real-world projects, submitted PRs, and collaborated with mentors and peers.)",
+      },
+      {
+        title: "Open Source Contributions",
+        description:
+          "(Regularly contribute to GitHub repositories in areas like documentation, bug fixes, and new features across various tech stacks.)",
       },
     ],
   },
 ];
+
 export const projects = [
   {
     id: 1,
-    name: "Mobile Accessories E-commerce",
+    name: "Learning Management System",
     description:
-      "An online store specializing in phone accessories including cases, chargers, cables, and power banks with MagSafe compatibility.",
+      "A feature-rich LMS platform for course enrollment, learning progress tracking, and role-based access (admin/instructor/student).",
+    href: "https://lms-vert-theta.vercel.app/",
+    image: "/assets/projects/lms.jpg",
+    bgImage: "/assets/backgrounds/blanket.jpg",
+    frameworks: [
+      { id: 1, name: "React" },
+      { id: 2, name: "Node.js" },
+      { id: 3, name: "MongoDB" },
+      { id: 4, name: "Tailwind CSS" },
+    ],
+  },
+  {
+    id: 2,
+    name: "Uber App Clone",
+    description:
+      "A ride-booking app clone with real-time location updates, driver-passenger flow, and a responsive UI mimicking Uber.",
+    href: "https://uber-app-clone-sigma.vercel.app/",
+    image: "/assets/projects/uber-clone.jpg",
+    bgImage: "/assets/backgrounds/uber-clone.jpg",
+    frameworks: [
+      { id: 1, name: "React" },
+      { id: 2, name: "Socket.io" },
+      { id: 3, name: "Node.js" },
+      { id: 4, name: "Tailwind CSS" },
+    ],
+  },
+  {
+    id: 3,
+    name: "Blog Application",
+    description:
+      "A full-stack blog app with authentication and CRUD operations built using GO for backend and React for frontend.",
+    href: "https://blogi-zeta.vercel.app/",
+    image: "/assets/projects/blog-app.jpg",
+    bgImage: "/assets/backgrounds/poster.jpg",
+    frameworks: [
+      { id: 1, name: "React" },
+      { id: 2, name: "Golang" },
+      { id: 3, name: "MongoDB" },
+      { id: 4, name: "Tailwind CSS" },
+    ],
+  },
+  {
+    id: 4,
+    name: "Virtual Assistant",
+    description:
+      "A smart AI-powered voice assistant capable of performing tasks via speech recognition and synthesis—built with browser-based APIs and NLP.",
+    href: "https://virtual-assistant-76zl.onrender.com/",
+    image: "/assets/projects/virtual-assistant.jpg",
+    bgImage: "/assets/backgrounds/curtains.jpg",
+    frameworks: [
+      { id: 1, name: "React" },
+      { id: 2, name: "SpeechRecognition API" },
+      { id: 3, name: "Tailwind CSS" },
+    ],
+  },
+  {
+    id: 5,
+    name: "E-commerce",
+    description:
+      "An online store for mobile accessories including cases, chargers, cables, and MagSafe products.",
     href: "",
     image: "/assets/projects/mobile-accessories-store.jpg",
     bgImage: "/assets/backgrounds/blanket.jpg",
     frameworks: [
       { id: 1, name: "React" },
       { id: 2, name: "Next.js" },
-      { id: 3, name: "Node.js" },
-      { id: 4, name: "MongoDB" },
       { id: 5, name: "Tailwind CSS" },
     ],
   },
-  {
-    id: 2,
-    name: "Plant Shop E-commerce",
-    description:
-      "An online store specializing in rare and decorative plants with a clean, user-friendly interface.",
-    href: "",
-    image: "/assets/projects/plant-shop.jpg",
-    bgImage: "/assets/backgrounds/curtains.jpg",
-    frameworks: [
-      { id: 1, name: "React" },
-      { id: 2, name: "Next.js" },
-      { id: 3, name: "Stripe API" },
-      { id: 4, name: "Tailwind CSS" },
-    ],
-  },
-  {
-    id: 3,
-    name: "Apple Tech Marketplace",
-    description:
-      "An e-commerce platform for Apple products and accessories with deals and category filtering.",
-    href: "",
-    image: "/assets/projects/apple-tech-store.jpg",
-    bgImage: "/assets/backgrounds/map.jpg",
-    frameworks: [
-      { id: 1, name: "Blazor" },
-      { id: 2, name: "ASP.NET Core" },
-      { id: 3, name: "SQL Server" },
-      { id: 4, name: "Bootstrap" },
-    ],
-  },
-  {
-    id: 4,
-    name: "Electronics & Gadgets Store",
-    description:
-      "A multi-category online shop featuring electronics, home appliances, and gaming gear with special offers.",
-    href: "",
-    image: "/assets/projects/electronics-store.jpg",
-    bgImage: "/assets/backgrounds/poster.jpg",
-    frameworks: [
-      { id: 1, name: "Vue.js" },
-      { id: 2, name: "Laravel" },
-      { id: 3, name: "MySQL" },
-      { id: 4, name: "SCSS" },
-    ],
-  },
-  {
-    id: 5,
-    name: "Home Decor Marketplace",
-    description:
-      "A curated collection of designer home decor items, including furniture and artisan vases.",
-    href: "",
-    image: "/assets/projects/home-decor-store.jpg",
-    bgImage: "/assets/backgrounds/table.jpg",
-    frameworks: [
-      { id: 1, name: "Angular" },
-      { id: 2, name: "Firebase" },
-      { id: 3, name: "GraphQL" },
-      { id: 4, name: "Material UI" },
-    ],
-  },
-  {
-    id: 6,
-    name: "Digital Game Store",
-    description:
-      "A gaming platform featuring discounted titles, top sellers, and genre-based browsing.",
-    href: "",
-    image: "/assets/projects/game-store.jpg",
-    bgImage: "/assets/backgrounds/curtains.jpg",
-    frameworks: [
-      { id: 1, name: "Svelte" },
-      { id: 2, name: "Node.js" },
-      { id: 3, name: "MongoDB" },
-      { id: 4, name: "Chakra UI" },
-    ],
-  },
 ];
+
 export const socials = [
-  { name: "Instagram", href: "https://www.instagram.com/ali.sanatidev/reels/" },
+  { name: "Instagram", href: "https://www.instagram.com/tulipstripti/" },
   {
-    name: "Youtube",
-    href: "https://www.youtube.com/channel/UCZhtUWTtk3bGJiMPN9T4HWA",
+    name: "Leetcode",
+    href: "https://leetcode.com/u/vermatripti547/",
   },
-  { name: "LinkedIn", href: "https://www.linkedin.com/in/ali-sanati/" },
-  { name: "GitHub", href: "https://github.com/Ali-Sanati" },
+  { name: "LinkedIn", href: "https://www.linkedin.com/in/triptiverma310/" },
+  { name: "GitHub", href: "https://github.com/Triptiverma003/" },
 ];
